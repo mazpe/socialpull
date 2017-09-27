@@ -17,8 +17,8 @@ class SocialUsers extends Migration
             $table->increments('id');
             $table->string('first_name');
             $table->string('last_name');
-            $table->string('facebook_id');
-            $table->string('twitter_username');
+            $table->string('facebook_id')->nullable();
+            $table->string('twitter_username')->nullable();
             $table->timestamps();
         });
     }
